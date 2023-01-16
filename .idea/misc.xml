@@ -5,6 +5,8 @@
       <map>
         <entry key="app/src/main/res/font/font_regular.xml" value="0.17604166666666668" />
         <entry key="app/src/main/res/layout/activity_cameraservice.xml" value="0.14583333333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14583333333333334" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.14583333333333334" />
       </map>
     </option>
   </component>

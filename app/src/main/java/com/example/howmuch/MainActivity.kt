@@ -3,6 +3,7 @@ package com.TAVE10thProject.HowMuch
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.example.howmuch.MyPageFragment_Main
 import com.example.howmuch.R
 import com.example.howmuch.databinding.ActivityMainBinding
 
@@ -63,7 +64,7 @@ class MainActivity : AppCompatActivity() {
                     return@setOnItemSelectedListener true
                 }
                 R.id.page_mypage -> {
-                    val mypageFragment = MyPageFragment_Main()
+                    val mypageFragment=MyPageFragment_Main()
                     var bundle = Bundle()
                     bundle.putString("userId",userId)
                     bundle.putString("userImg",userImg)
