@@ -1,4 +1,4 @@
-package com.TAVE10thProject.HowMuch
+package com.example.howmuch
 
 import android.os.Bundle
 import android.util.Log
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
                     //homeFragment.arguments = bundle
 
-                    supportFragmentManager.beginTransaction().replace(R.id.main_frm , homeFragment).commitAllowingStateLoss()
+                    supportFragmentManager.beginTransaction().replace(R.id.main_frm , homeFragment).commit()
                     return@setOnItemSelectedListener true
                 }
                 R.id.page_camera -> {
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
                     //FeedFragment.arguments = bundle
 
-                    supportFragmentManager.beginTransaction().replace(R.id.main_frm, cameraFragment).commitAllowingStateLoss()
+                    supportFragmentManager.beginTransaction().replace(R.id.main_frm, cameraFragment).commit()
                     return@setOnItemSelectedListener true
                 }
                 R.id.page_mypage -> {
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
 
                     //SettingFragment.arguments = bundle
 
-                    supportFragmentManager.beginTransaction().replace(R.id.main_frm, mypageFragment).commitAllowingStateLoss()
+                    supportFragmentManager.beginTransaction().replace(R.id.main_frm, mypageFragment).commit()
                     return@setOnItemSelectedListener true
                 }
             }
