@@ -6,36 +6,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/watering_background">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="53dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="72dp"
-        app:layout_constraintBottom_toBottomOf="@+id/signup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.357"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/cirblue" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="41dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.635"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/signup"
-        app:srcCompat="@drawable/cirpurple" />
-
     <EditText
         android:id="@+id/signup_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="208dp"
         android:layout_marginEnd="27dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/font_regular"
@@ -46,16 +22,16 @@
         android:textColorHint="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck" />
 
     <EditText
         android:id="@+id/signup_nickname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="25dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/font_regular"
@@ -66,7 +42,7 @@
         android:textColorHint="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signup_id" />
 
@@ -75,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="27dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/font_regular"
@@ -88,14 +64,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_nickname" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_nickname"
+        tools:ignore="DuplicateClickableBoundsCheck" />
 
     <EditText
         android:id="@+id/signup_pw_check"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="27dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/font_regular"
@@ -115,7 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="27dp"
         android:background="@drawable/watering_button_blue"
         android:fontFamily="@font/font_regular"
@@ -124,18 +101,39 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signup_pw_check" />
 
+    <ImageView
+        android:id="@+id/cir1"
+        android:layout_width="78dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/signup_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cirblue" />
+
+    <ImageView
+        android:id="@+id/cir2"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signup_title"
+        app:srcCompat="@drawable/cirpurple" />
+
     <TextView
-        android:id="@+id/signup"
+        android:id="@+id/signup_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="64dp"
         android:text="회원가입"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

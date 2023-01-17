@@ -9,30 +9,28 @@
 
     <EditText
         android:id="@+id/login_id_enroll_tv"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="36dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/font_regular"
         android:hint="이메일"
-        android:minHeight="48dp"
 
+        android:minHeight="48dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/login_password_enroll_tv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login_button"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/watering_button_blue"
         android:fontFamily="@font/font_regular"
@@ -41,17 +39,15 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_password_enroll_tv" />
+        app:layout_constraintTop_toBottomOf="@id/login_password_enroll_tv" />
 
     <EditText
         android:id="@+id/login_password_enroll_tv"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="140dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/font_regular"
         android:hint="비밀번호"
@@ -61,49 +57,29 @@
         android:textColorHint="@color/white"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_id_enroll_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <TextView
         android:id="@+id/tv_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="64dp"
         android:fontFamily="@font/font_regular"
-        android:text="회원이 아니신가요?"
-        android:textColor="@color/white"
+        android:text="회원이 아니신가요?                   회원가입"
+        android:textColor="#FFFFFF"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/signup_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="76dp"
-        android:fontFamily="@font/font_regular"
-        android:text="회원가입"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.716"
-        app:layout_constraintStart_toStartOf="@id/tv_signup" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="241dp"
         android:layout_height="281dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
