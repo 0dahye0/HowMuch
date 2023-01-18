@@ -23,7 +23,8 @@
         app:layout_constraintBottom_toTopOf="@+id/login_password_enroll_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login_button"
