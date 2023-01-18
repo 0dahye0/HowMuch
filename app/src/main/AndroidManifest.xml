@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HowMuch">
+        <activity android:name=".SignupActivity"/>
+        <!--<activity android:name=".MainActivity"/>-->
+        <!--이거 로그인 파트 코드를 짰는데,,,안되어서,,그냥 커밋할게여,,-->
+        <activity android:name=".LoginActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
